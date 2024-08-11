@@ -12,19 +12,22 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
             appBar: AppBar(),
-            body: ShopItem()
+            body: ListView(
+              children: [
+                Text('안녕'),
+                Text('안녕'),
+                Text('안녕'),
+                Text('안녕'),
+                Text('안녕'),
+                Text('안녕'),
+                Text('안녕'),
+                Text('안녕'),
+                Text('안녕'),
+                Text('안녕'),
+                Text('안녕'),
+              ],
             )
-    );
-  }
-}
-
-class ShopItem extends StatelessWidget {
-  const ShopItem({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-        child: Text('안녕')
+            )
     );
   }
 }
