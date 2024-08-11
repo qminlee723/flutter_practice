@@ -11,8 +11,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-            appBar: AppBar( leading: Icon(Icons.star), title: Text('앱')),
-            body: SizedBox(),
+            appBar: AppBar(),
+            body: Container(
+              child: Row(
+                children: [
+                  Image.asset('aws-certified-cloud-practitioner.png', width: 150,),
+                  Container()
+                ],
+              )
+            )
         )
     );
   }
